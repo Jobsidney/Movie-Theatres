@@ -4,7 +4,8 @@ const apiKey="api_key=f6c7dffdbd70cd42fb51876ae019eae1"
 const apiURL=baseUrl+"/discover/movie?sort_by=popularity.desc&"+apiKey;
 console.log(apiURL);
 const imageBaseUrl='https://image.tmdb.org/t/p/w500';
-
+const kidsAPI=baseUrl+"/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&"+apiKey
+console.log(kidsAPI);
 function movieData(url){
     fetch(url)
     .then(response => response.json())
@@ -14,7 +15,18 @@ function movieData(url){
         
     })
 }
-movieData(apiURL)
+function movieKids(url){
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.results);
+        displayCard(data.results)
+        
+    })
+
+}
+movieKids(kidsAPI)
+// movieData(apiURL)
 
 function displayCard(data){
     let movieSection=document.querySelector('#movieID')
@@ -29,7 +41,7 @@ function displayCard(data){
         
         <div class="overview">
             <div class="Movietitle">
-                <div>${title}</div>
+                <div class="title">${title}</div>
                 <div>${vote_average}</div>
             </div>
             <h3>OVERVIEW</h3>
@@ -43,27 +55,3 @@ function displayCard(data){
         
     });
 }
-
-// console.log(data.results);
-// data.results.foreach(item => {
-//     const movieSection=document.querySelector('.movie-cards')
-//     movieSection.innerHTML=`
-//     <div class="card">
-//     <img src="${imageBaseUrl}${item.poster_path}" alt="">
-    
-//     <div class="overview">
-//         <div class="Movietitle">
-//             <div>${item.title}</div>
-//             <div>${item.vote_average}</div>
-//         </div>
-//         <h3>OVERVIEW</h3>
-//         <p>
-//         ${item.overview}</p>
-//         </p>
-//     </div>
-
-
-// </div>
-
-//     `
-// })

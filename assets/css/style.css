@@ -27,7 +27,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    max-height: 100%;
+    max-height: 90%;
     padding: 1rem;
     visibility: hidden;
     font-size: 20px;
@@ -59,6 +59,7 @@ body{
     border-radius: 5px;
     font-weight: 800;
     font-size: large;
+    cursor: pointer;
 }
 .Movietitle{
     align-items: center;
@@ -87,4 +88,10 @@ nav>ul>li{
     font-size: xx-large;
     color: white;
     font-weight: 800;
+}
+.title{
+    text-decoration: underline;
+    color: rgb(167, 9, 9);
+    font-size: large; 
+    max-width: 150px;
 }
