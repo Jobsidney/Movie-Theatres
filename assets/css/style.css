@@ -1,38 +1,56 @@
 .heading{
     height:90vh;
-    background-image: url('/assets/images/802572.jpg');
+    background-image: url('/assets/images/802578.jpg');
     background-size:cover;
     background-repeat: no-repeat;
 }
 body{
-    background-color: black;
+    background-color: rgb(29, 28, 28);
     margin: 0;
     padding: 0;
 }
 .movie-cards{
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
-    background-color: red;
-    height: 25rem;
+    background-color: rgb(31, 30, 30);
     width: 310px;
     margin: 2rem;
+    position: relative;
+
 }
 .overview{
+    position: absolute;
     background-color: #fff;
-    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    padding: 1rem;
+    visibility: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
     
 }
-.overview>h2{
-    color: rgb(105, 103, 103);
+.card:hover .overview{
+    visibility: visible;
+    transition: 0.3s ,ease-in;
+}
+.overview>h3{
+    color: rgb(41, 41, 41);
     font-family:poppins;
+
+    
 }
 .card>img{
     width:310px;
+    border-radius: 10px;
 }
 .btn{
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(70, 69, 69);
     border: none;
     width:10rem;
     height:3rem;
@@ -41,6 +59,13 @@ body{
     border-radius: 5px;
     font-weight: 800;
     font-size: large;
+}
+.Movietitle{
+    align-items: center;
+    justify-content:space-between;
+    color: red;
+    display: flex;
+    font-size: larger;
 }
 #horizontal{
     height:5px;
@@ -53,11 +78,13 @@ nav>ul{
     flex-direction: row;
     list-style-type: none;
     justify-content: end;
+    margin-right: 50px;
+    padding-top: 50px;
 
 }
 nav>ul>li{
     padding-left: 50px;
-    font-size: larger;
+    font-size: xx-large;
     color: white;
     font-weight: 800;
 }
