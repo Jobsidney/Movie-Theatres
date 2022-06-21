@@ -1,0 +1,63 @@
+.heading{
+    height:90vh;
+    background-image: url('/assets/images/802572.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.movie-cards{
+    display:flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: red;
+    height: 25rem;
+    width: 310px;
+    margin: 2rem;
+}
+.overview{
+    background-color: #fff;
+    
+    
+}
+.overview>h2{
+    color: rgb(105, 103, 103);
+    font-family:poppins;
+}
+.card>img{
+    width:310px;
+}
+.btn{
+    background-color: rgb(24, 23, 23);
+    border: none;
+    width:10rem;
+    height:3rem;
+    margin-right: 30px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: large;
+}
+#horizontal{
+    height:5px;
+    background-color: red;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: end;
+
+}
+nav>ul>li{
+    padding-left: 50px;
+    font-size: larger;
+    color: white;
+    font-weight: 800;
+}
