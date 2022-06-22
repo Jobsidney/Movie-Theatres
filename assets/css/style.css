@@ -1,6 +1,5 @@
 
 *{
-    top: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -46,8 +45,9 @@ body{
 .card:hover .overview{
     visibility: visible;
     transition: 0.3s ,ease-in;
+    max-height: 60%;
 }
-.overview>h3{
+.overview>h4{
     color: rgb(41, 41, 41);
     font-family:Poppins;
     
@@ -101,20 +101,70 @@ nav>ul>li{
 .title{
     text-decoration: underline;
     color: rgb(167, 9, 9);
-    font-size: 25px; 
+    font-size: 18px; 
     max-width: 150px;
 }
 #blogs{
     margin-left: 2rem;
     color: white;
+    margin-top: 7%;
+    margin-bottom: 4%;
 }
 #blogs>h2{
     font-size: xx-large;
     text-decoration: underline;
     font-weight: bolder;
     font-family:ABeeZee;
+    margin-bottom: 3rem;
 }
+#newsTemplates{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.newCard{
+    color: white;
+    margin: 15px;
+    width: 500px;
+    max-height: 500px;
+}
+.newCard>img{
+    max-width: 500px;
+}
+.contents{
+    
+}
+
+
+
+
 #footer{
     height: 20rem;
     background-color: rgb(70, 69, 69);
 }
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-decoration: none;
+
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.5;
+      font-size: 60px;
+      color: red;
+  }
+  
+  .fa-facebook, .fa-twitter, .fa-linkedin{
+    color: rgb(204, 243, 243);
+    margin-right: 40px;
+  }
+  
+  .icons{
+    margin-top: 60vh;
+    padding-left: 2%;
+    font-size: 50px;
+    align-items: center;
+  }
