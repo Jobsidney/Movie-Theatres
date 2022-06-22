@@ -5,6 +5,11 @@
     background-repeat: no-repeat;
     background-blend-mode: darken;
 }
+*{
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(29, 28, 28);
     margin: 0;
@@ -32,9 +37,10 @@ body{
     padding: 1rem;
     visibility: hidden;
     font-size: 20px;
-    font-weight: bold;
+    font-weight:500;
     color: rgb(58, 57, 57);
     overflow:scroll;
+    font-family: Poppins;
     
 }
 .card:hover .overview{
@@ -43,8 +49,7 @@ body{
 }
 .overview>h3{
     color: rgb(41, 41, 41);
-    font-family:poppins;
-
+    font-family:Poppins;
     
 }
 .card>img{
@@ -62,6 +67,8 @@ body{
     font-weight: 800;
     font-size: large;
     cursor: pointer;
+    font-family:ABeeZee;
+    margin-top: 1rem;
 }
 .Movietitle{
     align-items: center;
@@ -94,6 +101,20 @@ nav>ul>li{
 .title{
     text-decoration: underline;
     color: rgb(167, 9, 9);
-    font-size: large; 
+    font-size: 25px; 
     max-width: 150px;
+}
+#blogs{
+    margin-left: 2rem;
+    color: white;
+}
+#blogs>h2{
+    font-size: xx-large;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family:ABeeZee;
+}
+#footer{
+    height: 20rem;
+    background-color: rgb(70, 69, 69);
 }
