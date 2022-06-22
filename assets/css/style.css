@@ -1,5 +1,5 @@
 .heading{
-    height:90vh;
+    height:85vh;
     background-image: url('https://wallpaperaccess.com/full/697405.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -88,13 +88,13 @@ nav>ul{
     flex-direction: row;
     list-style-type: none;
     justify-content: end;
-    margin-right: 50px;
+    margin-right: 70px;
     padding-top: 50px;
 
 }
 nav>ul>li{
     padding-left: 50px;
-    font-size: xx-large;
+    font-size: 2rem;
     color: white;
     font-weight: 800;
 }
