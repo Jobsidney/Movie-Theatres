@@ -6,6 +6,7 @@ console.log(apiURL);
 const imageBaseUrl='https://image.tmdb.org/t/p/w500';
 const kidsAPI=baseUrl+"/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&"+apiKey
 console.log(kidsAPI);
+const upcomingAPI=baseUrl+"/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2024-10-22&"+apiKey
 function movieData(url){
     fetch(url)
     .then(response => response.json())
@@ -25,8 +26,8 @@ function movieKids(url){
     })
 
 }
-movieKids(kidsAPI)
-// movieData(apiURL)
+// movieKids(kidsAPI)
+movieData(upcomingAPI)
 
 function displayCard(data){
     let movieSection=document.querySelector('#movieID')
