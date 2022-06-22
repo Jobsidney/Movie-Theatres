@@ -6,7 +6,10 @@ console.log(apiURL);
 const imageBaseUrl='https://image.tmdb.org/t/p/w500';
 const kidsAPI=baseUrl+"/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&"+apiKey
 console.log(kidsAPI);
+const scienceFixApi=baseUrl+"/discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc&"+apiKey
 const upcomingAPI=baseUrl+"/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2024-10-22&"+apiKey
+const dramaApi=baseUrl+"/discover/movie?with_genres=18&sort_by=vote_average.desc&vote_count.gte=10&"+apiKey
+const highestRatedMOvieApi=baseUrl+"/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&"+apiKey
 function movieData(url){
     fetch(url)
     .then(response => response.json())
@@ -27,7 +30,7 @@ function movieKids(url){
 
 }
 // movieKids(kidsAPI)
-// movieData(apiURL)
+movieData(highestRatedMOvieApi)
 
 function displayCard(data){
     let movieSection=document.querySelector('#movieID')
@@ -71,7 +74,7 @@ callMovies.addEventListener('click',function(){
   }
 })
 callSeries.addEventListener('click',function(){  if (true) {
-    movieData(upcomingAPI)
+    movieData(scienceFixApi)
     callSeries.style.background='red'
       
   }else{
@@ -81,6 +84,15 @@ callSeries.addEventListener('click',function(){  if (true) {
   callKids.addEventListener('click',function(){ 
     if (true) {
         movieData(kidsAPI)
+        callKids.style.backgroundColor='red'
+      
+  }else{
+    let movieSection=document.querySelector('#movieID')
+    movieSection.innerHTML=''
+  }})
+  callDrama.addEventListener('click',function(){ 
+    if (true) {
+        movieData(dramaApi)
         callKids.style.backgroundColor='red'
       
   }else{

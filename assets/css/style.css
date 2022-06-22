@@ -1,8 +1,9 @@
 .heading{
     height:90vh;
-    background-image: url('/assets/images/802578.jpg');
+    background-image: url('/assets/images/697405.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-blend-mode: darken;
 }
 body{
     background-color: rgb(29, 28, 28);
@@ -33,6 +34,7 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: rgb(58, 57, 57);
+    overflow:scroll;
     
 }
 .card:hover .overview{
