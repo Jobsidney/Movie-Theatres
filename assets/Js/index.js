@@ -110,5 +110,4 @@ callSeries.addEventListener('click',function(){  if (true) {
     movieSection.innerHTML=''
   }})
 
-  //testing deployment
   
