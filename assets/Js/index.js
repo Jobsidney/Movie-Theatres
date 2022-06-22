@@ -30,7 +30,7 @@ function movieKids(url){
 
 }
 // movieKids(kidsAPI)
-movieData(highestRatedMOvieApi)
+movieData(upcomingAPI)
 
 function displayCard(data){
     let movieSection=document.querySelector('#movieID')
@@ -62,6 +62,7 @@ function displayCard(data){
 const callMovies=document.querySelector('#callMovies')
 const callSeries=document.querySelector('#callSeries')
 const callKids=document.querySelector('#callKids')
+const callHighestRated=document.querySelector('#callHighestRated')
 // callKids.addEventListener('click',movieData(kidsAPI))
 callMovies.addEventListener('click',function(){
   if (true) {
@@ -93,7 +94,16 @@ callSeries.addEventListener('click',function(){  if (true) {
   callDrama.addEventListener('click',function(){ 
     if (true) {
         movieData(dramaApi)
-        callKids.style.backgroundColor='red'
+        callDrama.style.backgroundColor='red'
+      
+  }else{
+    let movieSection=document.querySelector('#movieID')
+    movieSection.innerHTML=''
+  }})
+  callHighestRated.addEventListener('click',function(){ 
+    if (true) {
+        movieData(highestRatedMOvieApi)
+        callHighestRated.style.backgroundColor='red'
       
   }else{
     let movieSection=document.querySelector('#movieID')
