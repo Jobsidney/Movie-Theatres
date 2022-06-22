@@ -63,7 +63,7 @@ const callKids=document.querySelector('#callKids')
 callMovies.addEventListener('click',function(){
   if (true) {
     movieData(apiURL)
-    callMovies.getElementsByClassName.background='red'
+    callMovies.style.background='red'
       
   }else{
     let movieSection=document.querySelector('#movieID')
@@ -72,15 +72,16 @@ callMovies.addEventListener('click',function(){
 })
 callSeries.addEventListener('click',function(){  if (true) {
     movieData(upcomingAPI)
-    callMovies.getElementsByClassName.background='red'
+    callSeries.style.background='red'
       
   }else{
     let movieSection=document.querySelector('#movieID')
     movieSection.innerHTML=''
   }})
-  callKids.addEventListener('click',function(){  if (true) {
-    movieData(kidsAPI)
-    callMovies.getElementsByClassName.background='red'
+  callKids.addEventListener('click',function(){ 
+    if (true) {
+        movieData(kidsAPI)
+        callKids.style.backgroundColor='red'
       
   }else{
     let movieSection=document.querySelector('#movieID')
