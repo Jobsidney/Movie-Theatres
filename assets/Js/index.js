@@ -27,7 +27,7 @@ function movieKids(url){
 
 }
 // movieKids(kidsAPI)
-movieData(upcomingAPI)
+// movieData(apiURL)
 
 function displayCard(data){
     let movieSection=document.querySelector('#movieID')
@@ -56,3 +56,33 @@ function displayCard(data){
         
     });
 }
+const callMovies=document.querySelector('#callMovies')
+const callSeries=document.querySelector('#callSeries')
+const callKids=document.querySelector('#callKids')
+// callKids.addEventListener('click',movieData(kidsAPI))
+callMovies.addEventListener('click',function(){
+  if (true) {
+    movieData(apiURL)
+    callMovies.getElementsByClassName.background='red'
+      
+  }else{
+    let movieSection=document.querySelector('#movieID')
+    movieSection.innerHTML=''
+  }
+})
+callSeries.addEventListener('click',function(){  if (true) {
+    movieData(upcomingAPI)
+    callMovies.getElementsByClassName.background='red'
+      
+  }else{
+    let movieSection=document.querySelector('#movieID')
+    movieSection.innerHTML=''
+  }})
+  callKids.addEventListener('click',function(){  if (true) {
+    movieData(kidsAPI)
+    callMovies.getElementsByClassName.background='red'
+      
+  }else{
+    let movieSection=document.querySelector('#movieID')
+    movieSection.innerHTML=''
+  }})
