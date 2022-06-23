@@ -111,8 +111,7 @@ callSeries.addEventListener('click',function(){  if (true) {
 
 
   function newsBlogs(url){
-    fetch(url)
-    .then(response => response.json())
+    fetch(url).then(response => response.json())
     .then(data => {
         console.log(data.articles);
         displayNews(data.articles);
@@ -126,7 +125,7 @@ newsBlogs(newsKey)
     newsSection.innerHTML=''
     for (let i = 17; i< 22; i++) {
       const element = data[i];
-      console.log(data[i]);
+      console.log(element);
       const {title,urlToImage,content,url}=element
       const card = document.createElement('div')
       card.className='card'
@@ -147,4 +146,34 @@ newsBlogs(newsKey)
     }
 }
 
-  
+function socialButtons(){
+  const git=document.querySelector('#git')
+  const linkedin=document.querySelector('#linkedin')
+  const twitter=document.querySelector('#twitter')
+  const div=document.querySelector('.socialMedia')
+  git.addEventListener('click', () =>{
+    div.innerContent=''
+  if(true){div.innerHTML='https://github.com/Jobsidney'}
+  else{div.innerHTML=''}
+  })
+  linkedin.addEventListener('click', () =>{
+    div.innerContent=''
+    if(true){div.innerHTML='https://www.linkedin.com/in/job-sidney-65a435203'}
+    else{
+    div.innerContent=''}
+  })
+  twitter.addEventListener('mouseover', () =>{
+    div.innerHTML=''
+    if(true){div.innerHTML='https://github.com/Jobsidney'}
+    else{div.innerHTML=''}
+    })
+
+}
+socialButtons()
+// function buttonCheck(button,link){
+//   button.addEventListener('click',()=>{
+
+//     divIcon.appendChild(div)
+//   })
+// }
+

@@ -138,22 +138,28 @@ a{
 .newCard>img{
     max-width: 500px;
 }
-.contents{
-    
-}
-
-
-
-
 #footer{
-    height: 20rem;
+    height: 18rem;
     background-color: rgb(70, 69, 69);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    color: rgb(141, 138, 138);
+}
+#footer>div>ul>li{
+    justify-content: space-around;
+    padding:10px;
+    list-style: none;
+}
+#footer>div{
+    margin-right:50px;
 }
 .fa {
     padding: 20px;
     width: 50px;
     text-decoration: none;
-
     
   }
   
@@ -161,21 +167,20 @@ a{
       opacity: 0.5;
       font-size: 60px;
       color: red;
+
   }
   
-  .fa-facebook, .fa-twitter, .fa-linkedin{
+  .fa-github, .fa-twitter, .fa-linkedin{
     color: rgb(204, 243, 243);
     margin-right: 40px;
   }
-  
   .icons{
-    margin-top: 60vh;
-    padding-left: 2%;
+    margin-top: 55vh;
+    padding-left: 7%;
     font-size: 50px;
     align-items: center;
   }
   .overview2{
-    /* position: absolute; */
     background-color: rgb(65, 64, 64);
     left: 0;
     right: 0;
@@ -233,4 +238,16 @@ a{
     text-decoration: none;
     color: white;
     width: max-content;
+}
+.socialMedia{
+    height: 40px;
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align:center;
+    padding-top: 10px;
+    font-weight:bold;
+    opacity: 0.6;
+    color: rgb(90, 87, 86);
 }
