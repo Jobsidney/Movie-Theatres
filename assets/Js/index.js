@@ -127,26 +127,23 @@ newsBlogs(newsKey)
     for (let i = 17; i< 22; i++) {
       const element = data[i];
       console.log(data[i]);
-      const {title,urlToImage,content,}=element
+      const {title,urlToImage,content,url}=element
       const card = document.createElement('div')
       card.className='card'
       card.innerHTML=`
       <img src="${urlToImage}" alt="">
       
-      <div class="overview">
+      <div class="overview2">
           <div class="Movietitle">
-              <div class="title">${title}</div>
+              <div class="title2">${title}</div>
           </div>
           <p>
           ${content}</p>
+          <a href="${url}"><div class="learnMore">Learn More</div></a>
           
       </div>
       `
       newsSection.appendChild(card)
-
-      
-  
-     
     }
 }
 

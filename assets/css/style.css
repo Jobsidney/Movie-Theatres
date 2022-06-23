@@ -14,6 +14,26 @@
 body{
     background-color: rgb(29, 28, 28);
 }
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: end;
+    margin-right: 70px;
+    padding-top: 50px;
+
+}
+nav>ul>li{
+    padding-left: 50px;
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    opacity: 0.6;
+}
+a{
+    color: white;
+    /* text-decoration: none; */
+}
 .movie-cards{
     display:flex;
     flex-wrap: wrap;
@@ -83,21 +103,7 @@ body{
     margin-top: 0;
     margin-bottom: 10px;
 }
-nav>ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: end;
-    margin-right: 70px;
-    padding-top: 50px;
 
-}
-nav>ul>li{
-    padding-left: 50px;
-    font-size: 2rem;
-    color: white;
-    font-weight: 800;
-}
 .title{
     text-decoration: underline;
     color: rgb(167, 9, 9);
@@ -168,3 +174,63 @@ nav>ul>li{
     font-size: 50px;
     align-items: center;
   }
+  .overview2{
+    /* position: absolute; */
+    background-color: rgb(65, 64, 64);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 90%;
+    padding: 1rem;
+    visibility: visible;
+    font-size: 20px;
+    font-weight:500;
+    color: rgb(197, 194, 194);
+    font-family: Poppins;
+    
+}
+.title2{
+    text-decoration: underline;
+    color: rgb(253, 252, 252);
+    font-size: 23px;
+    width:310px;
+    font-weight: bolder;
+}
+.Movietitle{
+    align-items: center;
+    justify-content:space-between;
+    color: red;
+    display: flex;
+    font-size: larger;
+}
+.card2{
+    background-color: rgb(31, 30, 30);
+    width: 310px;
+    margin: 2rem;
+    position: relative;
+
+}
+
+.card>img{
+    width:310px;
+    min-height: 100px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 0;
+}
+.learnMore{
+    color: white;
+    background-color: red;
+    width: max-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+}
+.overview2>a{
+    text-decoration: none;
+    color: white;
+    width: max-content;
+}
