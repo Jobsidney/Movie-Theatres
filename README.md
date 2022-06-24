@@ -9,15 +9,11 @@ A working demo of a Section of this Web page: https://jobsidney.github.io/Movie-
 <br  />
 
 When you visit the site, this is the view:
-<img src="./assets/images/landing.png">  
+<img src="./assets/images/blog.png">  
 
-<br  />
-### Movie_section
+### NewsSection
 Example:
-<img src="./assets/images/skills.png">
-### News_section
-Example:
-<img src="./assets/images/skills.png">
+<img src="./assets/images/news.png">
 
 ## [Features](https://jobsidney.github.io/Movie-Theatres/)
 
@@ -85,7 +81,7 @@ function movieData(url){
     })
 ```
 ## PROJECT AUTHOR
-- Jobsidney
+- [Jobsidney](https://github.com/Jobsidney/)
 - [<img style="border: 1px solid white;" src="./assets/images/job.png">](https://github.com/Jobsidney/)
 ***
 
