@@ -11,6 +11,12 @@ A working demo of a Section of this Web page: https://jobsidney.github.io/Movie-
 When you visit the site, this is the view:
 <img src="./assets/images/blog.png">  
 
+### MovieSection
+Example:
+where you will get different types of movies and an overview about them
+<img src="./assets/images/movies.png">
+
+
 ### NewsSection
 Example:
 <img src="./assets/images/news.png">
