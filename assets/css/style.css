@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 .heading{
     height:85vh;
     background-image: url('https://wallpaperaccess.com/full/697405.jpg');

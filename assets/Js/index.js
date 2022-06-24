@@ -12,7 +12,7 @@ const dramaApi=baseUrl+"/discover/movie?with_genres=18&sort_by=vote_average.desc
 const highestRatedMOvieApi=baseUrl+"/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&"+apiKey
 
 
-const newsKey='https://newsapi.org/v2/everything?q=actors&from=2022-05-22&sortBy=publishedAt&apiKey=a175074b2bb84dd0a7dac3a9f7ac007e';
+const newsKey='https://newsapi.org/v2/everything?q=actors&sortBy=publishedAt&apiKey=a175074b2bb84dd0a7dac3a9f7ac007e';
 
 
 function movieData(url){
@@ -58,7 +58,6 @@ const callMovies=document.querySelector('#callMovies')
 const callSeries=document.querySelector('#callSeries')
 const callKids=document.querySelector('#callKids')
 const callHighestRated=document.querySelector('#callHighestRated')
-// callKids.addEventListener('click',movieData(kidsAPI))
 callMovies.addEventListener('click',function(){
   if (true) {
     movieData(apiURL)
@@ -170,10 +169,4 @@ function socialButtons(){
 
 }
 socialButtons()
-// function buttonCheck(button,link){
-//   button.addEventListener('click',()=>{
-
-//     divIcon.appendChild(div)
-//   })
-// }
 
