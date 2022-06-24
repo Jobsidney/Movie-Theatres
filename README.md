@@ -1,7 +1,7 @@
 # MOVIE-THEATERS
 ***
 ## DESCRIPTION
-This is a MOvie website that displays a list of movies to the user and more details so that they can choose what type of movie to watch. It covers all age groups from children(animations) to adults (Movies).
+This is a Movie website that displays a list of movies to the user and more details so that they can choose what type of movie to watch. It covers all age groups from children(animations) to adults (Movies).
  example:
 <br  />
 ## Site:
@@ -12,10 +12,12 @@ When you visit the site, this is the view:
 <img src="./assets/images/landing.png">  
 
 <br  />
-You can see some of my well documentend projects and area of specialization.
+### Movie_section
 Example:
 <img src="./assets/images/skills.png">
-<br  />
+### News_section
+Example:
+<img src="./assets/images/skills.png">
 
 ## [Features](https://jobsidney.github.io/Movie-Theatres/)
 
