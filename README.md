@@ -59,7 +59,7 @@ Click on the provided link that will direct you to the website
         </nav>
 ```
 
-#### Css
+#### CSS
     Example of Css
 ```Css
 nav>ul>li{
