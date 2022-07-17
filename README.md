@@ -1,4 +1,4 @@
-# MOVIE-THEATERS
+# MOVIE-THEATERSS
 ***
 ## DESCRIPTION
 This is a Movie website that displays a list of movies to the user and more details so that they can choose what type of movie to watch. It covers all age groups from children(animations) to adults (Movies).
